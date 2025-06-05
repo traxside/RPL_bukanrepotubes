@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sipop.sipop.LoginView">
+    <children>
+        <AnchorPane prefHeight="720.0" prefWidth="768.0" style="-fx-background-color: #2B9DE1;">
+            <children>
+                <VBox alignment="BASELINE_LEFT" layoutX="17.0" layoutY="36.0" prefHeight="93.0" prefWidth="726.0">
+                    <children>
+                        <Label text="SI-POP">
+                            <font>
+                                <Font name="Segoe UI Black Italic" size="24.0" />
+                            </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="16.0" />
+                     </padding>
+                        </Label>
+                        <Label prefHeight="23.0" prefWidth="487.0" text="Sistem Informasi Pengelolaan Obat Pasien Rawat Jalan">
+                            <font>
+                                <Font name="Segoe UI" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <ImageView fitHeight="620.0" fitWidth="723.0" layoutX="12.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/blurred_page.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="769.0" prefHeight="720.0" prefWidth="511.0">
+            <children>
+                <VBox alignment="CENTER" layoutX="98.0" layoutY="39.0" prefHeight="568.0" prefWidth="330.0">
+                    <children>
+                        <Label text=" Login to you Account">
+                            <font>
+                                <Font name="Segoe UI Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <VBox prefHeight="130.0" prefWidth="193.0">
+                            <children>
+                                <Label text="Email">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font></Label>
+                                <TextField promptText="Email">
+                           <font>
+                              <Font size="18.0" />
+                           </font></TextField>
+                                <Label text="Password">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font></Label>
+                                <PasswordField prefWidth="193.0" promptText="Password">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="16.0" />
+                           </VBox.margin></PasswordField>
+                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                        <Button mnemonicParsing="false" style="-fx-background-color: #2B9DE1; -fx-pref-height: 42; -fx-pref-width: 256;" text="Login">
+                                 <font>
+                                    <Font name="Segoe UI" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="16.0" />
+                                 </HBox.margin></Button>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <Separator prefWidth="200.0" />
+                        <Label text="Jika belum memiliki akun. Silahkan melakukan registrasi pada administrasi klinik terdekat" textAlignment="CENTER" wrapText="true">
+                            <font>
+                                <Font name="Segoe UI" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
