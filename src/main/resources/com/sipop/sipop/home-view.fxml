@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.AmbientLight?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #e6f4f1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sipop.sipop.HomeView">
@@ -133,5 +140,118 @@
             </HBox>
          </children>
       </VBox>
+      <Label layoutX="294.0" layoutY="133.0" text="Hello, ">
+         <font>
+            <Font name="Segoe UI Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="435.0" layoutY="135.0" text="User!" textFill="#6d76eb">
+         <font>
+            <Font name="Segoe UI Bold Italic" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="195.0" text="Patient/ ID: 4539104DD">
+         <font>
+            <Font name="Segoe UI Italic" size="22.0" />
+         </font>
+      </Label>
+      <AmbientLight lightOn="true">
+         <color>
+            <Color red="0.7106481194496155" green="1.0" blue="0.42129629850387573" />
+         </color>
+      </AmbientLight>
+      <Button alignment="CENTER" layoutX="933.0" layoutY="138.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="291.0" style="-fx-background-color: E12B59; -fx-border-radius: 10;" text="Diabetes" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold Italic" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="295.0" layoutY="246.0" text="Consultation">
+         <font>
+            <Font name="Segoe UI Bold" size="24.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="453.0" layoutY="250.0" promptText="Search here" />
+      <Label layoutX="700.0" layoutY="283.0" text="No consultation(s) scheduled">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="339.0" text="Medicine Reminder">
+         <font>
+            <Font name="Segoe UI Bold" size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="297.0" layoutY="379.0" prefHeight="118.0" prefWidth="937.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="104.0" prefWidth="937.0" style="-fx-background-color: F0FBFF; -fx-border-radius: 10;">
+               <children>
+                  <ImageView accessibleRole="BUTTON" fitHeight="94.0" fitWidth="218.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/Obat1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView accessibleRole="BUTTON" fitHeight="78.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/Obat2.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets left="10.0" right="10.0" />
+               </opaqueInsets>
+            </HBox>
+            <ScrollBar />
+         </children>
+      </VBox>
+      <Label layoutX="289.0" layoutY="534.0" text="Stay Updated">
+         <font>
+            <Font name="Segoe UI Bold" size="24.0" />
+         </font>
+      </Label>
+      <SplitMenuButton layoutX="458.0" layoutY="535.0" mnemonicParsing="false" style="-fx-background-color: FFFFFF;" text="Pick Facility Type">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <HBox layoutX="289.0" layoutY="573.0" prefHeight="100.0" prefWidth="953.0">
+         <children>
+            <ImageView accessibleRole="BUTTON" fitHeight="123.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/F1.png" />
+               </image>
+            </ImageView>
+            <ImageView accessibleRole="BUTTON" fitHeight="123.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/F2.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView accessibleRole="BUTTON" fitHeight="123.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/F3.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView accessibleRole="BUTTON" fitHeight="123.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 10; -fx-background-radius: 10;">
+               <image>
+                  <Image url="@../../../images/F4.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
    </children>
 </AnchorPane>
